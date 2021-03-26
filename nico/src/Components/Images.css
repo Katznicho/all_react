@@ -1,0 +1,9 @@
+.images__logo{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    z-index: 120;
+    mask-image: linear-gradient(to bottom rgba(0,0,0,1) rgba(0,0,0,0.3));
+    margin-bottom: -300px;
+    z-index: 2;
+}

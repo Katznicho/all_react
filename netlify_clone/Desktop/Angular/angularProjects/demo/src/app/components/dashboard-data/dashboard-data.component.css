@@ -1,0 +1,8 @@
+.myClass{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: .4rem 0;
+    text-transform: uppercase;
+}

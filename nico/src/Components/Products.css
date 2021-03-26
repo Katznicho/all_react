@@ -1,0 +1,7 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color:#eff2f5;
+    z-index: 15;
+}

@@ -1,0 +1,19 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+.app__form{
+  display: flex;
+  flex-direction: column;
+  
+}
+.error{
+  color: red;
+  margin-bottom: 10px;
+}
+.MuiTextField-root{
+  margin-bottom: 10px !important;
+}
+.MuiFormControl-root{
+  margin-bottom: 10px;
+}

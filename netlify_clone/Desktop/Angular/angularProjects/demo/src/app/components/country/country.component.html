@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="form-group">
+        <label for="c">Select Country</label>
+        <br>
+        <select class="form-control" id="c" #input (change)="getValue($event)">
+            <option value="select">Select</option>
+            <option value="{{country}}" *ngFor="let country of countries">{{country}}</option>
+        </select>
+    </div>
+    <app-dashboard-data
+    [totalConfirmed]="totalConfirmed"
+    [totalRecovered]="totalRecovered"
+    [totalDeaths]="totalDeaths"
+    [totalActive]="totalActive"
+    ></app-dashboard-data>
+    <div class="row">
+        <div class="col-md-12">
+            <google-chart [data]="lineChart"></google-chart>
+        </div>
+    </div> 
+</div>

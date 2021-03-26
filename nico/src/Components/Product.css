@@ -1,0 +1,27 @@
+.product{
+    margin: 30px;
+    padding: 30px;
+    flex: 1;
+    /* margin-right: 20px;
+    margin-bottom: 20px; */
+    background-color: #fff;
+    width:100%;
+    height:auto;
+}
+.product__image{
+    object-fit: contain;
+    width: 80%;
+    flex:1;
+    height: auto;
+    margin: 20px;
+
+}
+.product__name, .product__price, .product__rating{
+    display: flex;
+    justify-content:space-evenly;
+}
+.product__button{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}

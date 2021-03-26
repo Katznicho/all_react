@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="jumbotron">
+        <div class="lead text-center">Corona covid Tracker</div>
+    </div>
+    <hr>
+    <app-dashboard-data
+    [totalConfirmed]="totalConfirmed"
+    [totalRecovered]="totalRecovered"
+    [totalDeaths]="totalDeaths"
+    [totalActive]="totalActive"
+    ></app-dashboard-data>
+    <div class="form-group">
+        <label for="c" class="m-2">caseType</label>
+        <input type="radio" class="m-2" #c value="c"(click)="updateChart(c)" name="caseType">Confirmed
+        <input type="radio" class="m-2" #d value="d"(click)="updateChart(d)" name="caseType">Deaths
+        <input type="radio" class="m-2" #r value="r"(click)="updateChart(r)" name="caseType">Recovered
+        <input type="radio" class="m-2" #a value="a"(click)="updateChart(a)" name="caseType">Active
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-sm-12">
+            <google-chart [data]="columnChart"></google-chart>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <google-chart [data]="pieChart"></google-chart>
+        </div>
+    </div>
+
+
+
+</div>

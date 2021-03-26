@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="text-center m-2">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">id</th>
+                <th scope="col">name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Details</th>
+                <th scope="col">DeleteStudent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let student of students">
+                <th scope="row">{{student.id}}</th>
+                <td>{{student.name}}</td>
+                <td>{{student.email}}</td>
+                <td><button class="btn btn-primary" (click)="showDetails(student)">showDetails</button></td>
+                <td><button class="btn btn-danger"(click)="onDelete(student.id)">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="card" *ngIf="selectedStudent">
+        <div class="body">
+            <div class="text-center m-2">
+                <div class="jumbotron">
+                    <div class="card-title">{{selectedStudentDetails.id}} : {{selectedStudentDetails.name}}</div>
+                    <div class="card-text">Details: {{selectedStudentDetails.details}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

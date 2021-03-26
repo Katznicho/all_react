@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <div class="jumbotron m-2">
+                <div class="col-sm-12">
+                    <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" name="" required class="form-control" formControlName="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email" name="" required class="form-control" formControlName="email">
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <label for="">Details</label>
+                            </div>
+                            <textarea name="" id="t" required cols="10" rows="5" formControlName="details"
+                            placeholder="enter few details"
+                            maxlength="20"
+                            ></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success" 
+                            [disabled] = "formGroup.invalid">Enroll</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

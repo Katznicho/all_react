@@ -1,0 +1,18 @@
+.login{
+    display: grid;
+    place-items: center;
+    height:100vh;
+    background-color: #eff2f5;
+}
+.login__body{
+    background-color: #fff;
+    width: 100vh;
+    height: 90vh;
+    box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.75);
+    place-content: center;
+}
+.login__info{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}

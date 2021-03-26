@@ -1,0 +1,9 @@
+.ng-dirty{
+    color:red;
+}
+.ng-untouched{
+    color:blue;
+}
+.ng-touched[required]{
+    color:yellow
+}
